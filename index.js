@@ -71,14 +71,7 @@ async function starts() {
 		success('2', 'pronto kk,')
 	})
 	
-					ppimg = await client.getProfilePicture(`${num.split('@')[0]}@c.us`)
-				} catch {
-					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
-				}
-				teks = `𝙁𝙡𝙬 @${num.split('@')[0]} 😣✋`
-				let buff = await getBuffer(ppimg)
-				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
-			}
+					
 		} catch (e) {
 			console.log('Error : %s', color(e, 'red'))
 		}
